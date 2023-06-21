@@ -1,3 +1,30 @@
-.header-text {
-    color: red;
+.main-header {
+    justify-content: center;
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        .header-top-left {
+            ul{
+                list-style: none;
+                display: flex;
+                height: 40px;
+            }
+            }
+
+        .header-top-right ul {
+            list-style: none;
+            display: flex;
+        }
+    }
+
+
+    .header-lower {
+        display: flex;
+        justify-content: space-between;
+        .header-lower-item ul {
+            list-style: none;
+        }
+    }
+
 }
