@@ -1,9 +1,11 @@
 .main-header {
     justify-content: center;
+    background-color: #1C1C1C;
+    
     .header-top {
         display: flex;
         justify-content: space-between;
-        height: 40px;
+        height: 60px;
         .header-top-left {
             ul{
                 list-style: none;
@@ -13,9 +15,15 @@
                     a {
                         text-decoration: none;
                     }
+                    i {
+                        // background-color: #F9C63F;
+                        color: #F9C63F;
+                    }
                 }
             }
             }
+        
+            
 
         .header-top-right ul {
             list-style: none;
@@ -23,6 +31,9 @@
             li {
                 a {
                     text-decoration: none;
+                }
+                i {
+                    color: #fff;
                 }
             }
         }
