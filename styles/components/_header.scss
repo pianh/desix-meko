@@ -9,12 +9,22 @@
                 list-style: none;
                 display: flex;
                 height: 40px;
+                li {
+                    a {
+                        text-decoration: none;
+                    }
+                }
             }
             }
 
         .header-top-right ul {
             list-style: none;
             display: flex;
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
         }
     }
 
@@ -24,6 +34,11 @@
         justify-content: space-between;
         .header-lower-item ul {
             list-style: none;
+            li {
+                a {
+                    text-decoration: none;
+                }
+            }
         }
     }
 
