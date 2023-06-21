@@ -1,8 +1,8 @@
 
 function HeaderDefault() {
     return ( 
-    <header className="main-header row">
-        <div className="header-top col-md-10  d-flex">
+    <header className="main-header">
+        <div className="header-top col-md-10">
             <div className="header-top-left">
                 <ul className="">
                     <li className="">
