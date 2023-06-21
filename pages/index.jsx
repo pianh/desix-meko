@@ -7,13 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
+    <div>
       <Header />
-      <h1>Home Page</h1>
+      <h1>Content</h1>
       <Footer/>
       
-    </main>
+    </div>
   )
 }

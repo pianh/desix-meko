@@ -1,6 +1,6 @@
 
 function HeaderDefault() {
     return ( 
-    <header className="">Header</header> );
+    <header className="header-text">Header</header> );
 }
 export default HeaderDefault;
