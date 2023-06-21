@@ -1,6 +1,7 @@
 
 function HeaderDefault() {
     return ( 
+<<<<<<< HEAD
     <header className="main-header row">
         <div className="header-logo col-2">
             <img src="" alt="" />
@@ -57,6 +58,21 @@ function HeaderDefault() {
                         </li>
                     </ul>
                 </div>
+=======
+    <header className="main-header">
+        <div className="header-top col-md-10">
+            <div className="header-top-left">
+                <ul className="">
+                    <li className="">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="#">needhelp@company.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-pin"></i>
+                        <span>88 Broklyn Golden Street. New York</span>
+                    </li>
+                </ul>
+>>>>>>> 2976b2be64c45d74b00c70a8a59ef19e1ec6ff1d
             </div>
             <div className="header-lower d-flex">
                   <div className="header-lower-tab row">
