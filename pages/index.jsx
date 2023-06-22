@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid p-0'>
       <Header />
       <h1>Content</h1>
       <Footer/>

@@ -1,11 +1,12 @@
 .main-header {
     justify-content: center;
-    background-color: #1C1C1C;
-    
+    // background-color: #1C1C1C;
+    border-bottom: 1px solid #6f7174;
     .header-top {
         display: flex;
         justify-content: space-between;
-        height: 60px;
+        height: 50px;
+        border: 1px solid #6f7174;
         .header-top-left {
             ul{
                 list-style: none;
@@ -17,7 +18,8 @@
                     }
                     i {
                         // background-color: #F9C63F;
-                        color: #F9C63F;
+                        color: #fec63f;
+                        ;
                     }
                 }
             }
@@ -34,6 +36,9 @@
                 }
                 i {
                     color: #fff;
+                }
+                a:hover i {
+                    color: #F9C63F;
                 }
             }
         }
@@ -53,4 +58,56 @@
         }
     }
 
+}
+.header-bg {
+    background-image: url(../../assets/images/background.jpeg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center
+}
+
+
+.header-lower-item {
+    ul {
+        li {
+                display: flex;
+                margin-right: 6px;
+                ul {
+                    display: flex;
+                    li {
+                        display: none;
+                    }
+                }
+                i {
+                    margin-left: 10px;
+                    font-size: 12px;
+                    align-items: center;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                
+               
+        }
+    }
+    i {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header-lower-tab {
+    .header-lower-item {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .header-lower-call {
+        display: flex;
+        justify-content: space-between;
+        .header-lower-icon {
+            color: #fff;
+            font-size: 26px;
+        }
+    }
 }
