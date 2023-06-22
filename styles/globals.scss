@@ -1,17 +1,9 @@
-// @import './vendors/vendors';
-
-// @import './abstracts/abstracts';
-
-// @import './base/base';
-
-// @import './layout/layout';
-
-// @import './pages/pages';
-
-// @import './components/components';
-// @import './abstracts/'
 @import './components/footer';
 @import './components/header';
+@import './pages/contact';
+@import './pages/news';
+@import './pages/service';
+@import './pages/home';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
