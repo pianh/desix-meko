@@ -1,113 +1,96 @@
-.main-header {
-    justify-content: center;
-    // background-color: #1C1C1C;
-    border-bottom: 1px solid #6f7174;
-    .header-top {
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-        border: 1px solid #6f7174;
-        .header-top-left {
-            ul{
-                list-style: none;
-                display: flex;
-                height: 40px;
-                li {
-                    a {
-                        text-decoration: none;
-                    }
-                    i {
-                        // background-color: #F9C63F;
-                        color: #fec63f;
-                        ;
-                    }
-                }
-            }
-            }
+/* PC */
+@media screen and (min-width: 992px) {
+        .header-bg {
+            background-image: url(../../assets/images/background.jpeg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center
+        }
         
-            
-
-        .header-top-right ul {
-            list-style: none;
+    .main-header {
+        .header-top {
             display: flex;
-            li {
-                a {
-                    text-decoration: none;
-                }
-                i {
-                    color: #fff;
-                }
-                a:hover i {
-                    color: #F9C63F;
-                }
-            }
-        }
-    }
-
-
-    .header-lower {
-        display: flex;
-        justify-content: space-between;
-        .header-lower-item ul {
-            list-style: none;
-            li {
-                a {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-}
-.header-bg {
-    background-image: url(../../assets/images/background.jpeg);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center
-}
-
-
-.header-lower-item {
-    ul {
-        li {
+            justify-content: space-between;
+            border: 1px solid #6f7174;
+            height: 45px;
+            margin-left: 200px;
+            padding-right: 100px;
+            .header-top-left {
                 display: flex;
-                margin-right: 6px;
                 ul {
                     display: flex;
                     li {
-                        display: none;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-right: 20px;
+                        i {
+                            color: #fec63f;
+                        }
+                        
                     }
                 }
-                i {
-                    margin-left: 10px;
-                    font-size: 12px;
-                    align-items: center;
-                    margin-top: auto;
-                    margin-bottom: auto;
+
+            }
+            .header-top-right {
+                display: flex;
+                ul {
+                    display: flex;
+                    li {
+                        font-size: 14px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        
+
+                    }
                 }
-                
-               
+                .header-useful-links {
+                    li {
+                        margin-right: 14px;
+                    }
+                }
+                .header-social-icons {
+                    color: #fff;
+                    li {
+                        a {
+                            margin-right: 20px;
+                        }
+                        a:hover i {
+                            color: #F9C63F;
+                        }
+                    }
+                }
+            }
         }
+
+        .header-lower {
+            border-bottom: 1px solid #6f7174;
+            height: 90px;
+            // .header-logo {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+        }
+
     }
-    i {
-        display: flex;
-        align-items: center;
-    }
+
+    
 }
 
-.header-lower-tab {
-    .header-lower-item {
-        display: flex;
-        justify-content: space-between;
-
-    }
-    .header-lower-call {
-        display: flex;
-        justify-content: space-between;
-        .header-lower-icon {
-            color: #fff;
-            font-size: 26px;
-        }
-    }
+/* Tablet & mobile */
+@media screen and (max-width: 991px) {
 }
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+}
+
+
+
+
+
