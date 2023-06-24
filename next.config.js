@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+};
 
-module.exports = nextConfig
+const withImages = require('next-images');
+
+module.exports = withImages({
+    reactStrictMode: true,
+});
+
+module.exports = nextConfig;

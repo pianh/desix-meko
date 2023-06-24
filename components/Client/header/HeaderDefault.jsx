@@ -21,7 +21,7 @@ function HeaderDefault() {
                     <div className="header-top-left">
                         <ul>
                             <li style={{ marginLeft: '20px' }}>
-                                <i class="fa-solid fa-envelope"></i>
+                                <i className="fa-solid fa-envelope"></i>
                                 <a href="#" className="text-[#848484] ml-2 text-xs hover:text-white">
                                     needhelp@company.com
                                 </a>
@@ -124,10 +124,10 @@ function HeaderDefault() {
                                             <a href="">Contact</a>
                                         </li>
                                     </ul>
-                                    <i class="fa-solid fa-magnifying-glass text-white text-[22px] mr-8"></i>
+                                    <i classname="fa-solid fa-magnifying-glass text-white text-[22px] mr-8"></i>
                                 </div>
                                 <div className="header-lower-call col-3">
-                                    <i class="fa-solid fa-phone text-2xl mr-6"></i>
+                                    <i classname="fa-solid fa-phone text-2xl mr-6"></i>
                                     <div className="header-lower-call--any text-white">
                                         <span className="text-[#ECB83C] font-medium text-sm">Call anytime</span>
                                         <span className="font-bold">+92 (8800) - 9850</span>
@@ -140,8 +140,8 @@ function HeaderDefault() {
             </div>
 
             <div className={`header-sticky ${isSticky ? 'sticky-appear' : ''}`}>
-                <div className="row ml-12 mr-12">
-                    <div className="col-5">
+                <div className="row ml-12 mr-12 h-100">
+                    <div className="col-5 h-100 d-flex align-items-center">
                         <Image
                             srcset="https://kodesolution.com/html/2023/desix-html/images/logo-2.png"
                             alt="Logo"
