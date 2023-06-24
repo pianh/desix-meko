@@ -1,0 +1,114 @@
+.news-card-group {
+    margin: 80px auto 0;
+
+    .news-card-item {
+        width: 90%;
+        border: 1px solid #e1e2e7;
+        padding: 0;
+
+        .news-card-img {
+            height: auto;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            img {
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    .news-card-content {
+        position: relative;
+        margin-left: 30px;
+        .news-card-time {
+            position: absolute;
+            background-color: #fec63f;
+            color: #18191c;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 20px;
+            padding: 6px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            top: -20px;
+            font-size: 14px;
+            font-weight: 700;
+            span {
+                margin-right: 10px;
+            }
+        }
+        .news-card-des {
+            display: flex;
+
+            .news-card-au {
+                i {
+                    color: #fec63f;
+                }
+                h3 {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 10px;
+                    color: #909294;
+                    font-size: 15px;
+                }
+            }
+
+            .news-card-comment {
+                margin-left: 20px;
+                i {
+                    color: #fec63f;
+                }
+                h3 {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 10px;
+                    color: #909294;
+                    font-size: 15px;
+                }
+            }
+        }
+        .news-card-au,
+        .news-card-comment {
+            display: flex;
+            margin-top: 35px;
+        }
+
+        .news-card-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            margin: 20px 0 30px;
+        }
+    }
+    .news-card-more {
+        align-items: center;
+        background-color: #f2f3f6;
+        color: #6f7174;
+        display: flex;
+        font-size: 15px;
+        justify-content: space-between;
+        line-height: 30px;
+        padding: 7px 30px;
+        font-weight: 400;
+        width: 100%;
+        .news-card-more--icon {
+            height: 35px;
+            width: 35px;
+            background-color: #fec63f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #000;
+        }
+    }
+}

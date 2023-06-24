@@ -1,10 +1,9 @@
 function FooterDefault() {
-	return (
-		<footer className="footer default">
-			<div className="container">
-				<p className="copy-right">Copyright © 2023 Satek. All Rights Reserved.</p>
-			</div>
-		</footer>
-	);
+    return (
+        <footer className="footer container-fluid">
+            <div className="footer-top"></div>
+            <div className="footer-bottom"></div>
+        </footer>
+    );
 }
 export default FooterDefault;

@@ -1,6 +1,7 @@
 // Import bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 // import Font Awesome CSS
 import '@fortawesome/fontawesome-svg-core/styles.css';
 // import Skeleton CSS

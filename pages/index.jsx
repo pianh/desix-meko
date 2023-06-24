@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import Header from './../components/Client/header/HeaderDefault';
 import Footer from './../components/Client/footer/FooterDefault';
 import { useState, useEffect } from 'react';
+import PortffolioCard from './../components/Client/card/PortffolioCard';
+import NewsCard from './../components/Client/card/NewsCard';
 import 'animate.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -32,6 +34,24 @@ export default function Home() {
             icon: 'fa-solid fa-arrow-right',
             heading: 'Commited to Deliver',
             description: 'Lorem ipsum is simply free text dol sit amet, passage of.',
+        },
+    ];
+    const portfolios = [
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg',
+            title: 'Marketing web',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-2.jpg',
+            title: 'Marketing web',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-3.jpg',
+            title: 'Marketing web',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-4.jpg',
+            title: 'Marketing web',
         },
     ];
 
@@ -427,10 +447,10 @@ export default function Home() {
                     </div>
                     <div className="home-talking--arrow-group">
                         <div className="home-talking--arrow-left">
-                            <i classname="fa-solid fa-arrow-left"></i>
+                            <i className="fa-solid fa-arrow-left"></i>
                         </div>
                         <div className="home-talking--arrow-right">
-                            <i classname="fa-solid fa-arrow-right"></i>
+                            <i className="fa-solid fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
@@ -567,19 +587,19 @@ export default function Home() {
                     <div className="home-agency-qc--group">
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i classname="fa-solid fa-person-rifle"></i>
+                                <i class="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Leader in digital marketing</h2>
                         </div>
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i classname="fa-solid fa-arrow-up-z-a"></i>
+                                <i class="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Highest success rates</h2>
                         </div>
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i classname="fa-solid fa-bullhorn"></i>
+                                <i class="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Quality marketing solutions</h2>
                         </div>
@@ -596,6 +616,33 @@ export default function Home() {
                         </h1>
                     </div>
                     <div className="row">
+                        {/* <div className="col-3 home-portfolio-card">
+                            <div className="home-portfolio-img">
+                                <Image
+                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg"
+                                    alt="Logo"
+                                    // width={400}
+                                    // height={40}
+                                    className="mt-1"
+                                />
+                            </div>
+                            <div className="home-portfolio-effect">
+                                <div className="home-portfolio-effect-icon">
+                                    <i className="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <span>Development</span>
+                                <h1>
+                                    Marketing <br />
+                                    webdesign
+                                </h1>
+                            </div>
+                        </div> */}
+
+                        {/* Card Components */}
+                        <PortffolioCard />
+                    </div>
+
+                    {/* <div className="row">
                         <div className="col-3 home-portfolio-card">
                             <div className="home-portfolio-img">
                                 <Image
@@ -608,7 +655,7 @@ export default function Home() {
                             </div>
                             <div className="home-portfolio-effect">
                                 <div className="home-portfolio-effect-icon">
-                                    <i classname="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right"></i>
                                 </div>
                                 <span>Development</span>
                                 <h1>
@@ -617,78 +664,132 @@ export default function Home() {
                                 </h1>
                             </div>
                         </div>
-                        <div className="col-3 home-portfolio-card">
-                            <div className="home-portfolio-img">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg"
-                                    alt="Logo"
-                                    // width={400}
-                                    // height={40}
-                                    className="mt-1"
-                                />
-                            </div>
-                            <div className="home-portfolio-effect">
-                                <div className="home-portfolio-effect-icon">
-                                    <i classname="fa-solid fa-arrow-right"></i>
-                                </div>
-                                <span>Development</span>
-                                <h1>
-                                    Marketing <br />
-                                    webdesign
-                                </h1>
-                            </div>
+                    </div> */}
+                </div>
+            </section>
+            <section className="home-statist">
+                <div className="home-statist-counter row">
+                    <div className="home-statist-item col-3">
+                        <div className="home-statist-icon">
+                            <i class="fa-solid fa-list-check"></i>
                         </div>
-                        <div className="col-3 home-portfolio-card">
-                            <div className="home-portfolio-img">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg"
-                                    alt="Logo"
-                                    // width={400}
-                                    // height={40}
-                                    className="mt-1"
-                                />
-                            </div>
-                            <div className="home-portfolio-effect">
-                                <div className="home-portfolio-effect-icon">
-                                    <i classname="fa-solid fa-arrow-right"></i>
-                                </div>
-                                <span>Development</span>
-                                <h1>
-                                    Marketing <br />
-                                    webdesign
-                                </h1>
-                            </div>
+                        <div>
+                            <span class="home-statist-count-text">990</span>
+
+                            <span className="home-statist-count-title">Projects Completed</span>
                         </div>
-                        <div className="col-3 home-portfolio-card">
-                            <div className="home-portfolio-img">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg"
-                                    alt="Logo"
-                                    // width={400}
-                                    // height={40}
-                                    className="mt-1"
-                                />
-                            </div>
-                            <div className="home-portfolio-effect">
-                                <div className="home-portfolio-effect-icon">
-                                    <i classname="fa-solid fa-arrow-right"></i>
-                                </div>
-                                <span>Development</span>
-                                <h1>
-                                    Marketing <br />
-                                    webdesign
-                                </h1>
-                            </div>
+                    </div>
+                    <div className="home-statist-item col-3">
+                        <div className="home-statist-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <span className="home-statist-count-text">990</span>
+                            <span className="home-statist-count-title">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div className="home-statist-item col-3">
+                        <div className="home-statist-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <span className="home-statist-count-text">990</span>
+                            <span className="home-statist-count-title">Projects Completed</span>
+                        </div>
+                    </div>
+                    <div className="home-statist-item col-3">
+                        <div className="home-statist-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div>
+                            <span className="home-statist-count-text">990</span>
+                            <span className="home-statist-count-title">Projects Completed</span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="home-statist">
-                <div className="row">
-                    <div className="col-3"></div>
-                    <div className="col-3"></div>
-                    <div className="col-3"></div>
-                    <div className="col-3"></div>
+            <section className="home-articles">
+                <div className="home-articles-heading">
+                    <span>FROM THE BLOG</span>
+                    <h1>
+                        Checkout latest news <br /> updates & articles
+                    </h1>
+                </div>
+                <div className="home-articles-group">
+                    <NewsCard />
+                </div>
+            </section>
+            <section className="home-together home-together-bg">
+                <div className="home-together-heading">
+                    <span>Get in touch</span>
+                    <h1>Let’s work together</h1>
+                </div>
+                <div className="row ">
+                    <div className="col-sm-8 home-together-form">
+                        <div className="home-together-input-group">
+                            <div className="col-sm-5 home-together-name">
+                                <input type="text" placeholder="Your name" className="form-control" />
+                            </div>
+                            <div className="col-sm-5">
+                                <input type="text" placeholder="Email Address" className="form-control" />
+                            </div>
+                        </div>
+
+                        <div className="col-sm-10 home-together-message">
+                            <textarea
+                                type="text"
+                                name=""
+                                id=""
+                                placeholder="Write a message"
+                                className="form-control"
+                            />
+                        </div>
+                        <div className="home-together-button">Send a message</div>
+                    </div>
+                </div>
+                <div className="home-together-img">
+                    <Image
+                        srcset="https://kodesolution.com/html/2023/desix-html/images/resource/girl.png"
+                        alt="Logo"
+                        className="mt-1"
+                    />
+                </div>
+                <div className="row home-together-envato">
+                    <div className="home-together-envato-img">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/clients/1.png"
+                            alt="Logo"
+                            className="mt-1"
+                        />
+                    </div>
+                    <div className="home-together-envato-img">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/clients/1.png"
+                            alt="Logo"
+                            className="mt-1"
+                        />
+                    </div>
+                    <div className="home-together-envato-img">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/clients/1.png"
+                            alt="Logo"
+                            className="mt-1"
+                        />
+                    </div>
+                    <div className="home-together-envato-img">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/clients/1.png"
+                            alt="Logo"
+                            className="mt-1"
+                        />
+                    </div>
+                    <div className="home-together-envato-img">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/clients/1.png"
+                            alt="Logo"
+                            className="mt-1"
+                        />
+                    </div>
                 </div>
             </section>
         </div>
