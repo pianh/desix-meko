@@ -4,6 +4,7 @@ import Header from './../components/Client/header/HeaderDefault';
 import Footer from './../components/Client/footer/FooterDefault';
 import { useState, useEffect } from 'react';
 import PortffolioCard from './../components/Client/card/PortffolioCard';
+import ServicesCard from './../components/Client/card/ServicesCard';
 import NewsCard from './../components/Client/card/NewsCard';
 import 'animate.css';
 
@@ -34,24 +35,6 @@ export default function Home() {
             icon: 'fa-solid fa-arrow-right',
             heading: 'Commited to Deliver',
             description: 'Lorem ipsum is simply free text dol sit amet, passage of.',
-        },
-    ];
-    const portfolios = [
-        {
-            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-1.jpg',
-            title: 'Marketing web',
-        },
-        {
-            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-2.jpg',
-            title: 'Marketing web',
-        },
-        {
-            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-3.jpg',
-            title: 'Marketing web',
-        },
-        {
-            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/project-4.jpg',
-            title: 'Marketing web',
         },
     ];
 
@@ -115,128 +98,10 @@ export default function Home() {
                     randomised words.
                 </div>
             </section>
-            <section className="home-marketing">
-                {/* <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}> */}
-
+            {/* <section className="home-marketing"> */}
+            <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}>
                 <div className="home-marketing-card-group row">
-                    <div className="row">
-                        <div className="col-md-3">
-                            <div className="home-marketing-card">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/service-1.jpg"
-                                    alt="Logo"
-                                    // width={}
-                                    // height={40}
-                                    className="mt-1 w-full"
-                                />
-                                <div className="home-marketing-card--icon">
-                                    <i className="fa-solid fa-clapperboard "></i>
-                                </div>
-                                <div className="home-marketing-card--text">
-                                    <span>Website development</span>
-                                </div>
-                                <div className="home-marketing-effect">
-                                    <div className="home-marketing-effect--icon">
-                                        <i className="fa-solid fa-clapperboard "></i>
-                                    </div>
-                                    <span className="home-marketing-effect-title">
-                                        Website <br />
-                                        development
-                                    </span>
-                                    <span className="home-marketing-effect-sub">
-                                        There are many variations of passages of available but the majority.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="home-marketing-card col-3">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/service-1.jpg"
-                                    alt="Logo"
-                                    // width={}
-                                    // height={40}
-                                    className="mt-1 w-full"
-                                />
-                                <div className="home-marketing-card--icon">
-                                    <i className="fa-solid fa-clapperboard "></i>
-                                </div>
-                                <div className="home-marketing-card--text">
-                                    <span>Website development</span>
-                                </div>
-                                <div className="home-marketing-effect">
-                                    <div className="home-marketing-effect--icon">
-                                        <i className="fa-solid fa-clapperboard "></i>
-                                    </div>
-                                    <span className="home-marketing-effect-title">
-                                        Website <br />
-                                        development
-                                    </span>
-                                    <span className="home-marketing-effect-sub">
-                                        There are many variations of passages of available but the majority.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="home-marketing-card col-3">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/service-1.jpg"
-                                    alt="Logo"
-                                    // width={}
-                                    // height={40}
-                                    className="mt-1 w-full"
-                                />
-                                <div className="home-marketing-card--icon">
-                                    <i className="fa-solid fa-clapperboard "></i>
-                                </div>
-                                <div className="home-marketing-card--text">
-                                    <span>Website development</span>
-                                </div>
-                                <div className="home-marketing-effect">
-                                    <div className="home-marketing-effect--icon">
-                                        <i className="fa-solid fa-clapperboard "></i>
-                                    </div>
-                                    <span className="home-marketing-effect-title">
-                                        Website <br />
-                                        development
-                                    </span>
-                                    <span className="home-marketing-effect-sub">
-                                        There are many variations of passages of available but the majority.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-3">
-                            <div className="home-marketing-card col-3">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/service-1.jpg"
-                                    alt="Logo"
-                                    // width={}
-                                    // height={40}
-                                    className="mt-1 w-full"
-                                />
-                                <div className="home-marketing-card--icon">
-                                    <i className="fa-solid fa-clapperboard "></i>
-                                </div>
-                                <div className="home-marketing-card--text">
-                                    <span>Website development</span>
-                                </div>
-                                <div className="home-marketing-effect">
-                                    <div className="home-marketing-effect--icon">
-                                        <i className="fa-solid fa-clapperboard "></i>
-                                    </div>
-                                    <span className="home-marketing-effect-title">
-                                        Website <br />
-                                        development
-                                    </span>
-                                    <span className="home-marketing-effect-sub">
-                                        There are many variations of passages of available but the majority.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <ServicesCard />
                 </div>
             </section>
             <section className="home-solution row">
