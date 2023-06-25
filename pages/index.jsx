@@ -115,8 +115,9 @@ export default function Home() {
                     randomised words.
                 </div>
             </section>
-            {/* <section className="home-marketing"> */}
-            <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}>
+            <section className="home-marketing">
+                {/* <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}> */}
+
                 <div className="home-marketing-card-group row">
                     <div className="row">
                         <div className="col-md-3">
@@ -792,6 +793,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }

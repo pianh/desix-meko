@@ -195,7 +195,7 @@
 
 .home-marketing-card:hover .home-marketing-effect {
     display: block; /* Display the element when hovering over .home-marketing-card */
-    animation: slide-up 0.3s ease-in-out forwards; /* Apply the animation */
+    animation: slide-up 0.13s ease-in-out forwards; /* Apply the animation */
 }
 
 .home-marketing-effect--icon,
@@ -1140,7 +1140,7 @@
 .home-together-envato {
     height: 200px;
     width: 100%;
-    margin-top: 100px;
+    padding: 100px;
     padding-left: 50px;
     padding-right: 50px;
     display: inline-flex;
