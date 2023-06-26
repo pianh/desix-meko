@@ -69,7 +69,7 @@ const Contact = () => {
                         </h5>
                         <div className="contact-detail">
                             <div className="contact-icon">
-                                <i class="fa-solid fa-phone"></i>
+                                <i className="fa-solid fa-phone"></i>
                             </div>
                             <div className="contact-des">
                                 <span>Have any question?</span>
@@ -78,7 +78,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-detail">
                             <div className="contact-icon">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i className="fa-solid fa-envelope"></i>
                             </div>
                             <div className="contact-des">
                                 <span>Write email</span>
@@ -87,7 +87,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-detail">
                             <div className="contact-icon">
-                                <i class="fa-solid fa-location-arrow"></i>
+                                <i className="fa-solid fa-location-arrow"></i>
                             </div>
                             <div className="contact-des">
                                 <span>Visit anytime</span>

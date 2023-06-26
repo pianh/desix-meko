@@ -6,7 +6,7 @@ function FooterDefault() {
             <div className="footer-top row">
                 <div className="col-sm-4 footer-top-group">
                     <div className="footer-top-icon">
-                        <i class="fa-solid fa-square-phone"></i>
+                        <i className="fa-solid fa-square-phone"></i>
                     </div>
                     <div className="footer-top-des">
                         <span>Call Anytime</span>
@@ -15,7 +15,7 @@ function FooterDefault() {
                 </div>
                 <div className="col-sm-4 footer-top-group">
                     <div className="footer-top-icon">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i className="fa-solid fa-envelope"></i>
                     </div>
                     <div className="footer-top-des">
                         <span>Send Email</span>
@@ -24,7 +24,7 @@ function FooterDefault() {
                 </div>
                 <div className="col-sm-4 footer-top-group">
                     <div className="footer-top-icon">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i className="fa-solid fa-location-dot"></i>
                     </div>
                     <div className="footer-top-des">
                         <span>Address</span>
@@ -46,16 +46,16 @@ function FooterDefault() {
                     </h3>
                     <div className="footer-social">
                         <div className="footer-social-item">
-                            <i class="fa-brands fa-twitter"></i>
+                            <i className="fa-brands fa-twitter"></i>
                         </div>
                         <div className="footer-social-item">
-                            <i class="fa-brands fa-facebook"></i>
+                            <i className="fa-brands fa-facebook"></i>
                         </div>
                         <div className="footer-social-item">
-                            <i class="fa-solid fa-podcast"></i>
+                            <i className="fa-solid fa-podcast"></i>
                         </div>
                         <div className="footer-social-item">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i className="fa-brands fa-instagram"></i>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@ function FooterDefault() {
                                 <li>
                                     <a href="#">Faqs</a>
                                 </li>
-                                <li class="break-column">
+                                <li className="break-column">
                                     <a href="#">About</a>
                                 </li>
                                 <li>
@@ -105,7 +105,7 @@ function FooterDefault() {
                 </div>
             </div>
             <div className="footer-bottom row">
-                <hr class="footer-bottom-line" />
+                <hr className="footer-bottom-line" />
                 <span>© Copyright 2023 by Company.com</span>
             </div>
         </footer>

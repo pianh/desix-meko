@@ -98,8 +98,8 @@ export default function Home() {
                     randomised words.
                 </div>
             </section>
-            {/* <section className="home-marketing"> */}
-            <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}>
+            <section className="home-marketing">
+                {/* <section className={`home-marketing ${isVisible ? 'animate__animated animate__fadeInTopRight' : ''}`}> */}
                 <div className="home-marketing-card-group row">
                     <ServicesCard />
                 </div>
@@ -115,8 +115,6 @@ export default function Home() {
                         <Image
                             srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-1.jpg"
                             alt="Logo"
-                            // width={}
-                            // height={40}
                             className="mt-1 w-full"
                         />
                     </div>
@@ -124,8 +122,6 @@ export default function Home() {
                         <Image
                             srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-2.jpg"
                             alt="Logo"
-                            // width={}
-                            // height={40}
                             className="mt-1 w-full"
                         />
                     </div>
@@ -453,19 +449,19 @@ export default function Home() {
                     <div className="home-agency-qc--group">
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i class="fa-solid fa-person-walking-with-cane"></i>
+                                <i className="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Leader in digital marketing</h2>
                         </div>
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i class="fa-solid fa-person-walking-with-cane"></i>
+                                <i className="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Highest success rates</h2>
                         </div>
                         <div className="home-agency-qc--item col-sm-4">
                             <span>
-                                <i class="fa-solid fa-person-walking-with-cane"></i>
+                                <i className="fa-solid fa-person-walking-with-cane"></i>
                             </span>
                             <h2>Quality marketing solutions</h2>
                         </div>
@@ -537,17 +533,17 @@ export default function Home() {
                 <div className="home-statist-counter row">
                     <div className="home-statist-item col-3">
                         <div className="home-statist-icon">
-                            <i class="fa-solid fa-list-check"></i>
+                            <i className="fa-solid fa-list-check"></i>
                         </div>
                         <div>
-                            <span class="home-statist-count-text">990</span>
+                            <span className="home-statist-count-text">990</span>
 
                             <span className="home-statist-count-title">Projects Completed</span>
                         </div>
                     </div>
                     <div className="home-statist-item col-3">
                         <div className="home-statist-icon">
-                            <i class="fa-solid fa-list-check"></i>
+                            <i className="fa-solid fa-list-check"></i>
                         </div>
                         <div>
                             <span className="home-statist-count-text">990</span>
@@ -556,7 +552,7 @@ export default function Home() {
                     </div>
                     <div className="home-statist-item col-3">
                         <div className="home-statist-icon">
-                            <i class="fa-solid fa-list-check"></i>
+                            <i className="fa-solid fa-list-check"></i>
                         </div>
                         <div>
                             <span className="home-statist-count-text">990</span>
@@ -565,7 +561,7 @@ export default function Home() {
                     </div>
                     <div className="home-statist-item col-3">
                         <div className="home-statist-icon">
-                            <i class="fa-solid fa-list-check"></i>
+                            <i className="fa-solid fa-list-check"></i>
                         </div>
                         <div>
                             <span className="home-statist-count-text">990</span>
