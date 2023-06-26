@@ -1025,6 +1025,44 @@
             }
         }
     }
+
+    .home-solution {
+        // height: 550px;
+        .home-solution-content {
+            // display: none;
+        }
+        .home-solution-image-group {
+            margin-top: 40px;
+            .home-solution-image2 {
+                top: 250px;
+            }
+        }
+    }
+
+    .home-scroll {
+        overflow: hidden;
+        margin-top: 500px;
+    }
+    .home-agency-img {
+        display: none; //check
+    }
+    .home-digital {
+        span {
+            font-size: 40px;
+            top: 40%;
+        }
+    }
+
+    .home-talking {
+        margin-top: 600px;
+        .home-talking-left {
+            h1 {
+                font-size: 30px;
+                line-height: 45px;
+                margin-top: 15px;
+            }
+        }
+    }
 }
 /* Mobile */
 @media screen and (max-width: 767px) {

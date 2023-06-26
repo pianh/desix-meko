@@ -105,28 +105,7 @@ export default function Home() {
                 </div>
             </section>
             <section className="home-solution row">
-                {/* <div className="col-sm-6 home-solution-image-group"> */}
-                <div
-                    className={`col-sm-6 home-solution-image-group ${
-                        isVisible ? 'animate__animated animate__fadeIn' : ''
-                    }`}
-                >
-                    <div className="home-solution-image1">
-                        <Image
-                            srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-1.jpg"
-                            alt="Logo"
-                            className="mt-1 w-full"
-                        />
-                    </div>
-                    <div className="home-solution-image2">
-                        <Image
-                            srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-2.jpg"
-                            alt="Logo"
-                            className="mt-1 w-full"
-                        />
-                    </div>
-                </div>
-                <div className="col-sm-6 home-solution-content">
+                <div className="col-md-12 col-lg-6 home-solution-content">
                     <div className="home-solution-square"></div>
                     <div className="home-solution-content-heading">
                         <span className="home-solution-sub">GET TO KNOW US</span>
@@ -186,6 +165,26 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div
+                    className={`col-md-12 col-lg-6 home-solution-image-group ${
+                        isVisible ? 'animate__animated animate__fadeIn' : ''
+                    }`}
+                >
+                    <div className="home-solution-image1">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-1.jpg"
+                            alt="Logo"
+                            className="mt-1 w-full"
+                        />
+                    </div>
+                    <div className="home-solution-image2">
+                        <Image
+                            srcset="https://kodesolution.com/html/2023/desix-html/images/resource/about-2.jpg"
+                            alt="Logo"
+                            className="mt-1 w-full"
+                        />
+                    </div>
+                </div>
             </section>
             <section className="home-scroll">
                 <div className="home-scroll-text">*Transofrm ideas into reality</div>
@@ -207,39 +206,7 @@ export default function Home() {
                         Agency is building a top <br /> business sectors
                     </h2>
                 </div>
-                <div className="col-sm-6 row">
-                    <div className="row" style={{ marginTop: '40px' }}>
-                        <div className="col-sm-6">
-                            <div className="home-business-year">
-                                <Image
-                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/faq.jpg"
-                                    alt="Logo"
-                                    // width={}
-                                    // height={40}
-                                    className="mt-1 w-full"
-                                />
-                                <div>
-                                    <h1>26</h1>
-                                    <p>Years Experience</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 home-business-note">
-                            {businessItems.map((item, index) => (
-                                <div className="home-business-item" key={index} style={{ marginTop: '25px' }}>
-                                    <div className="home-business-item-heading">
-                                        <div className="home-business-item-icon">
-                                            <i className={item.icon}></i>
-                                        </div>
-                                        <span>{item.heading}</span>
-                                    </div>
-                                    <div className="home-business-des">{item.description}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-6" style={{ marginTop: '30px' }}>
+                <div className="col-md-12 col-lg-6" style={{ marginTop: '30px' }}>
                     <div className="home-business-colapse">
                         <div className={`home-business-colapse ${isExpanded1 ? 'expanded' : ''}`}>
                             <div className="home-business-colapse-item">
@@ -287,6 +254,36 @@ export default function Home() {
                                     </span>
                                 )}
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-12 row col-lg-6">
+                    <div className="row" style={{ marginTop: '40px' }}>
+                        <div className="col-md-6 col-lg-6">
+                            <div className="home-business-year">
+                                <Image
+                                    srcset="https://kodesolution.com/html/2023/desix-html/images/resource/faq.jpg"
+                                    alt="Logo"
+                                    className="mt-1 w-full"
+                                />
+                                <div>
+                                    <h1>26</h1>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 col-lg-6 home-business-note">
+                            {businessItems.map((item, index) => (
+                                <div className="home-business-item" key={index} style={{ marginTop: '25px' }}>
+                                    <div className="home-business-item-heading">
+                                        <div className="home-business-item-icon">
+                                            <i className={item.icon}></i>
+                                        </div>
+                                        <span>{item.heading}</span>
+                                    </div>
+                                    <div className="home-business-des">{item.description}</div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -419,7 +416,7 @@ export default function Home() {
                     <p>D</p>
                 </div>
                 <div className="home-agency-content">
-                    <div className="col-12 col-sm-6">
+                    <div className="col-12 col-sm-6 col-md-6">
                         <span>COMPANY BENEFITS</span>
                         <h1>
                             Why should choose <br /> our agency?

@@ -22,12 +22,32 @@ function ServicesCard() {
             title: 'Website development',
             description: 'There are many variations of passages of available but the majority.',
         },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/service-1.jpg',
+            title: 'Website development',
+            description: 'There are many variations of passages of available but the majority.',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/service-2.jpg',
+            title: 'Website development',
+            description: 'There are many variations of passages of available but the majority.',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/service-3.jpg',
+            title: 'Website development',
+            description: 'There are many variations of passages of available but the majority.',
+        },
+        {
+            srcset: 'https://kodesolution.com/html/2023/desix-html/images/resource/service-4.jpg',
+            title: 'Website development',
+            description: 'There are many variations of passages of available but the majority.',
+        },
     ];
 
     return (
         <div className="row">
             {services.map((service, index) => (
-                <div className="col-md-3 col-sm-4 col-6" key={index}>
+                <div className="col-lg-3 col-md-6" key={index} style={{ marginTop: '15px' }}>
                     <div className="services-marketing-card">
                         <Image srcset={service.srcset} alt="Logo" className="mt-1 w-full" />
                         <div className="services-marketing-card--icon">
