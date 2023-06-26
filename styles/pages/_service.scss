@@ -36,130 +36,13 @@
     }
 }
 
-.services-marketing-card {
-    top: -80px;
-    position: absolute;
-    width: 270px;
-    // height: 40px;
-    img {
-        border-top: 4px solid #fec63f;
-        width: 100%;
-        object-fit: cover;
-    }
-    .services-marketing-card--icon {
-        height: 60px;
-        width: 60px;
-        background-color: #fec63f;
-        position: absolute;
-        z-index: -1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        right: 50px;
-        bottom: 55px;
-        .fa-clapperboard {
-            font-size: 25px;
-        }
-    }
-
-    .services-marketing-card--text {
-        width: 209px;
-        height: 90px;
-        background-color: #fff;
-        position: absolute;
-        /* top: 57px; */
-        bottom: -35px;
-        font-size: 22px;
-        font-weight: 700;
-        align-items: center;
-        display: flex;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-        span {
-            margin-left: 20px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-        }
-    }
-    .services-marketing-card-effect {
-        height: 110%;
-        width: 100%;
-        background-color: #0e0f12;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        border-bottom: 4px solid #fec63f;
-        .services-marketing-card-effect--icon {
-            height: 60px;
-            width: 60px;
-            background-color: #fec63f;
-            position: absolute;
-            z-index: -1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            left: 20px;
-            top: 55px;
-            .fa-clapperboard {
-                font-size: 25px;
-            }
-        }
-        .services-marketing-card-effect-title {
-            color: #fff;
-            font-size: 22px;
-            font-weight: 600;
-            align-items: center;
-            display: flex;
-            margin-top: 125px;
-            margin-left: 20px;
-        }
-        .services-marketing-card-effect-sub {
-            color: #707172;
-            align-items: center;
-            display: flex;
-            margin-top: 15px;
-            margin-left: 20px;
-        }
-    }
+/* PC */
+@media screen and (min-width: 1024px) {
 }
 
-.services-marketing-card-effect {
-    display: none; /* Hide the element by default */
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 }
-
-.services-marketing-card:hover .services-marketing-card-effect {
-    display: block; /* Display the element when hovering over .services-marketing-card */
-    animation: slide-up 0.5s ease-in-out forwards; /* Apply the animation */
+/* Mobile */
+@media screen and (max-width: 767px) {
 }
-
-.services-marketing-card--icon,
-.services-marketing-card-title,
-.services-marketing-card-sub {
-    opacity: 0;
-}
-
-@keyframes slide-up {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes delayed-appear {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-// .services-marketing-card-effect:hover .services-marketing-card-effect--icon,
-// .services-marketing-card-effect:hover .services-marketing-card-effect-title,
-// .services-marketing-card-effect:hover .services-marketing-card-effect-sub {
-//     animation: delayed-appear 0.1s ease-in-out 0.1s forwards;
-// }

@@ -1,43 +1,108 @@
 @keyframes loading-box1 {
-	0%,
-	50% {
-		transform: translate(100%, 0);
-	}
-	100% {
-		transform: translate(200%, 0);
-	}
+    0%,
+    50% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        transform: translate(200%, 0);
+    }
 }
 
 @keyframes loading-box2 {
-	0% {
-		transform: translate(0, 100%);
-	}
-	50% {
-		transform: translate(0, 0);
-	}
-	100% {
-		transform: translate(100%, 0);
-	}
+    0% {
+        transform: translate(0, 100%);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
 }
 
 @keyframes loading-box3 {
-	0%,
-	50% {
-		transform: translate(100%, 100%);
-	}
-	100% {
-		transform: translate(0, 100%);
-	}
+    0%,
+    50% {
+        transform: translate(100%, 100%);
+    }
+    100% {
+        transform: translate(0, 100%);
+    }
 }
 
 @keyframes loading-box4 {
-	0% {
-		transform: translate(200%, 0);
-	}
-	50% {
-		transform: translate(200%, 100%);
-	}
-	100% {
-		transform: translate(100%, 100%);
-	}
+    0% {
+        transform: translate(200%, 0);
+    }
+    50% {
+        transform: translate(200%, 100%);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes colorTransition {
+    0% {
+        background-position: right bottom;
+        background-color: #fec63f;
+        color: #000;
+    }
+    50% {
+        background-position: left bottom;
+        background-color: #fff;
+        color: #fff;
+    }
+    100% {
+        background-position: right bottom;
+        background-color: #fec63f;
+        color: #000;
+    }
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes delayed-appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }

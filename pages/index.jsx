@@ -414,14 +414,12 @@ export default function Home() {
                     <Image
                         srcset="https://kodesolution.com/html/2023/desix-html/images/resource/round-text.png"
                         alt="Logo"
-                        // width={400}
-                        // height={40}
                         className="mt-1"
                     />
                     <p>D</p>
                 </div>
                 <div className="home-agency-content">
-                    <div className="col-sm-6">
+                    <div className="col-12 col-sm-6">
                         <span>COMPANY BENEFITS</span>
                         <h1>
                             Why should choose <br /> our agency?
@@ -433,7 +431,7 @@ export default function Home() {
                             even believable.
                         </p>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-12 col-sm-6">
                         <div className="home-agency-img">
                             <Image
                                 srcset="https://kodesolution.com/html/2023/desix-html/images/resource/why-us.jpg"

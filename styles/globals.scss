@@ -1,12 +1,16 @@
 @import './components/footer';
 @import './components/header';
 @import './components/newscard';
+@import './components/keyframes';
+@import './components/servicescard';
 @import './pages/contact';
 @import './pages/news';
 @import './pages/service';
 @import './pages/home';
 @import './base/base';
 @import './base/reset';
+@import './abstracts/keyframes';
+@import './abstracts/variables';
 
 @tailwind base;
 @tailwind components;
