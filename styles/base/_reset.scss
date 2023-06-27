@@ -2,13 +2,14 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--color-white);
     font-family: 'Poppins', 'Montserrat', sans-serif;
     text-rendering: optimizeSpeed;
-    overflow-x: hidden;
+
     // font-weight: 300;
     // min-height: 100vh;
     color: var(--color-black);

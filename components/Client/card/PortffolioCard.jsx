@@ -22,7 +22,7 @@ function PortffolioCard() {
     return (
         <>
             {portfolios.map((portfolio, index) => (
-                <div className="col-sm-3 home-portfolio-card" key={index}>
+                <div className="col-12 col-lg-3 col-md-6 home-portfolio-card" key={index}>
                     <div className="home-portfolio-img">
                         <Image srcset={portfolio.srcset} alt="Logo" className="mt-1" />
                     </div>

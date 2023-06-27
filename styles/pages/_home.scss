@@ -1,10 +1,14 @@
+.container-fluid {
+    padding: 0;
+}
 .home-bg {
     background-image: url(../../assets/images/background.jpeg);
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-
+    background-color: #000;
+    margin: 0;
     .home-bg-content {
         color: #fff;
         font-size: 90px;
@@ -375,7 +379,7 @@
             -webkit-text-stroke: 3px #fec63f;
             text-stroke: 3px #fec63f;
             color: #000;
-            bottom: -25px;
+            bottom: 25px;
             left: 25%;
         }
         p {
@@ -462,7 +466,7 @@
     background-color: yellow;
     padding-left: 120px;
     padding-right: 120px;
-    // max-width: 100%;
+    max-width: 100%;
 
     .home-talking-left {
         margin-top: 100px;
@@ -600,7 +604,6 @@
 }
 
 .home-agency {
-    height: 700px;
     background-color: #fff;
     padding: 0 120px;
     position: relative;
@@ -706,7 +709,6 @@
 //home-portfolio
 
 .home-portfolio {
-    height: 700px;
     background-color: #fff;
     padding: 0 120px;
     .home-portfolio-content {
@@ -804,11 +806,11 @@
 
 // home-statist
 .home-statist {
-    height: 600px;
     background-color: #fff;
     padding: 0 120px;
     background-image: url(../../assets/images/pattern-3.jpg);
     margin-top: -200px;
+    max-width: 100%;
 }
 
 .home-statist-counter {
@@ -861,7 +863,6 @@
 }
 
 .home-articles {
-    height: 900px;
     padding: 0 120px;
 }
 .home-articles-heading {
@@ -886,9 +887,8 @@
 }
 
 .home-together {
-    height: 599px;
     background-color: #ccc;
-    margin: 0 120px;
+    margin: 40px 120px 0;
     position: relative;
     .home-together-heading {
         padding-top: 100px;
@@ -977,7 +977,6 @@
 }
 
 .home-together-envato {
-    height: 200px;
     width: 100%;
     padding: 100px;
     padding-left: 50px;
@@ -1003,18 +1002,39 @@
     }
     .home-marketing-card-group {
         max-width: 100%;
-        height: 400px;
     }
 }
 
 /* PC */
 @media screen and (min-width: 1024px) {
+    .home-agency {
+        background-color: #fff;
+        padding: 0 120px;
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 200px;
+    }
+    .home-business {
+        .home-business-year {
+            h1 {
+                bottom: -30px;
+            }
+            // p {
+            //     bottom: -110px;
+            // }
+        }
+    }
+    .home-talking {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .home-marketing {
-        height: 300px;
+        height: 100%;
+        margin: 0;
     }
     .home-service {
         .home-service-left {
@@ -1043,9 +1063,7 @@
         overflow: hidden;
         margin-top: 500px;
     }
-    .home-agency-img {
-        display: none; //check
-    }
+
     .home-digital {
         span {
             font-size: 40px;
@@ -1054,7 +1072,9 @@
     }
 
     .home-talking {
-        margin-top: 600px;
+        margin-top: 620px;
+        height: 100%;
+        margin: 0;
         .home-talking-left {
             h1 {
                 font-size: 30px;
@@ -1063,7 +1083,303 @@
             }
         }
     }
+    .home-agency-content {
+        display: block;
+        .home-agency-img {
+            width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .home-agency-qc {
+        display: none;
+    }
+    .home-portfolio {
+        margin-top: 170px;
+        .home-portfolio-content {
+            .home-portfolio-heading {
+                h1 {
+                    font-size: 30px;
+                    line-height: 44px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .home-portfolio-card {
+            margin-top: 0;
+        }
+    }
+    .home-statist {
+        margin-top: 50px;
+        .home-statist-item {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    .home-together {
+        margin: 20px 0 0;
+    }
+    .home-together-img {
+        display: none;
+    }
+    .home-business {
+        height: 100%;
+        .home-business-year {
+            h1 {
+                bottom: 24px;
+            }
+            p {
+                bottom: -50px;
+            }
+        }
+    }
+    .home-talking {
+        margin-top: 50px;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 767px) {
+    .home-bg {
+        .home-bg-content {
+            font-size: 33px;
+        }
+        .selected::before {
+            display: none;
+        }
+        .selected::after {
+            display: none;
+        }
+    }
+    .home-service {
+        padding-left: 0;
+        padding-right: 0;
+        .home-service-left {
+            .home-service-title {
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+        .home-service-right {
+            margin-top: 0;
+        }
+    }
+    .home-marketing {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        .services-marketing-card-effect {
+            height: 100%;
+            width: 95%;
+            border: none;
+        }
+    }
+    .services-marketing-card {
+        top: -80px;
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    .home-solution {
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        .home-solution-content-heading {
+            .home-solution-title {
+                font-size: 35px;
+                line-height: 40px;
+            }
+        }
+        .home-solution-group {
+            position: relative;
+            margin-top: 215px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .home-solution-item {
+                button {
+                    margin-top: 50px;
+                }
+            }
+        }
+        .home-solution-image-group {
+            margin-top: 50px;
+            padding: 0;
+            .home-solution-image1 {
+                max-width: 100%;
+            }
+            .home-solution-image2 {
+                display: none;
+            }
+        }
+    }
+    .home-scroll {
+        margin-top: 50px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .home-digital {
+        span {
+            font-size: 26px;
+            font-weight: 800;
+            top: 40%;
+            text-align: center;
+        }
+    }
+    .home-business {
+        margin: 20px 0 0;
+        height: 100%;
+        .home-business-heading {
+            h2 {
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+        .home-business-year {
+            p {
+                bottom: -70px;
+            }
+        }
+        .home-business-note {
+            margin-top: 70px;
+            text-align: center;
+        }
+        .home-business-item-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .home-business-item-icon {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .home-talking {
+        margin-top: 50px;
+        height: 100%;
+        padding: 0 15px;
+        .home-talking-left {
+            h1 {
+                font-size: 30px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .home-agency {
+        height: 100%;
+        padding: 0 15px;
+        .home-agency-content {
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+                font-weight: 600;
+                margin-top: 30px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+        .home-agency-img {
+            max-width: 100%;
+            position: relative;
+        }
+        .home-agency-qc {
+            margin-right: 0;
+            padding: 0;
+            .home-agency-qc--group {
+                display: flex;
+                flex-direction: column;
+                .home-agency-qc--item {
+                    flex-direction: column;
+                    margin-bottom: 30px;
+                    span {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .home-portfolio {
+        height: 100%;
+        padding: 0 15px;
+        .home-portfolio-content {
+            .home-portfolio-heading {
+                h1 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .home-portfolio-card {
+            max-width: 100%;
+            padding-right: 0;
+            // margin-left: 15px;
+            .home-portfolio-img {
+                height: 100%;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .home-statist {
+        height: 100%;
+        margin-top: 50px;
+        padding: 0 15px;
+        width: 100%;
+        .home-statist-item {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .home-statist-counter .home-statist-item:not(:last-child) {
+            border: none;
+        }
+    }
+    .home-articles {
+        height: 100%;
+        padding: 0 0 0 15px;
+        .home-articles-heading {
+            h1 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .news-card-item {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .home-together {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        .home-together-heading {
+            padding-top: 50px;
+        }
+        .home-together-img {
+            display: none;
+        }
+        .home-together-form {
+            margin: 30px auto;
+            .home-together-input-group {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .home-together-message {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .home-together-envato {
+        display: none;
+    }
 }

@@ -21,7 +21,7 @@ const Services = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="services-content" style={{ marginBottom: '400px' }}>
+                <div className="services-content d-flex justify-content-between">
                     <ServicesCard />
                     {/* <PortffolioCard /> */}
                 </div>

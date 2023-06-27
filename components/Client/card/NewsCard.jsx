@@ -29,9 +29,9 @@ function NewsCard() {
     ];
     return (
         <>
-            <div className="row news-card-group">
+            <div className="row news-card-group ">
                 {newsData.map((news, index) => (
-                    <div className="col-sm-4" key={index}>
+                    <div className="col-12 col-lg-4 col-md-6" key={index}>
                         <div className="news-card-item">
                             <div className="news-card-img">
                                 <Image srcset={news.srcset} alt="Logo" className="" />

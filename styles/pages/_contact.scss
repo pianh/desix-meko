@@ -165,6 +165,11 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact-content {
+        .contact-button-reset {
+            margin-left: 6px;
+        }
+    }
 }
 /* Mobile */
 @media screen and (max-width: 767px) {

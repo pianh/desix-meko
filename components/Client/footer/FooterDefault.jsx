@@ -4,7 +4,7 @@ function FooterDefault() {
     return (
         <footer className="footer">
             <div className="footer-top row">
-                <div className="col-sm-4 footer-top-group">
+                <div className="col-12 col-lg-4 col-md-6 footer-top-group">
                     <div className="footer-top-icon">
                         <i className="fa-solid fa-square-phone"></i>
                     </div>
@@ -13,7 +13,7 @@ function FooterDefault() {
                         <a href="tel:+92(8800)48720">+92 (8800) -89 8630</a>
                     </div>
                 </div>
-                <div className="col-sm-4 footer-top-group">
+                <div className="col-12 col-lg-4 col-md-6 footer-top-group">
                     <div className="footer-top-icon">
                         <i className="fa-solid fa-envelope"></i>
                     </div>
@@ -22,7 +22,7 @@ function FooterDefault() {
                         <a href="mailto:needhelp@company.com">needhelp@company.com</a>
                     </div>
                 </div>
-                <div className="col-sm-4 footer-top-group">
+                <div className="col-12 col-lg-4 col-md-12 footer-top-group">
                     <div className="footer-top-icon">
                         <i className="fa-solid fa-location-dot"></i>
                     </div>
@@ -33,7 +33,7 @@ function FooterDefault() {
                 </div>
             </div>
             <div className="footer-center row">
-                <div className="col-sm-6">
+                <div className="col-12 col-lg-6 col-md-12">
                     <div className="footer-image-logo">
                         <Image
                             srcset="https://kodesolution.com/html/2023/desix-html/images/logo.png"
@@ -59,7 +59,7 @@ function FooterDefault() {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-6 row">
+                <div className="col-12 col-lg-6 col-md-12 row">
                     <div className="col-sm-6 footer-explore">
                         <h5>Explore</h5>
                         <div className="footer-list footer-list-columns">
