@@ -25,7 +25,7 @@ export default function Home() {
         {
             icon: 'fa-solid fa-arrow-right',
             heading: 'Commited to Deliver',
-            description: 'Lorem ipsum is simply free text dol sit amet, passage of.',
+            description: 'Lorem ipsum is simply free text dol sit amett, passage of.',
         },
     ];
 
